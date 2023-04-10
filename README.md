@@ -68,6 +68,31 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 - Website - [https://nestjs.com](https://nestjs.com/)
 - Twitter - [@nestframework](https://twitter.com/nestframework)
 
+## Usefull Commands
+
+### Docker
+
+1. Run containers
+```bash
+docker-compose up -d
+```
+
+2. Access "App" container with Bash
+```bash
+docker-compose exec app bash
+```
+
+2.1 Optional command
+```bash
+docker exec -it prismaorm-api_app bash
+```
+
+3. Run [Prisma Studio](https://www.prisma.io/studio)
+> At "App" container run
+
+```bash
+npx prisma studio
+```
 ## License
 
 Nest is [MIT licensed](LICENSE).
